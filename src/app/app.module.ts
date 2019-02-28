@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { ViewerModule } from '../viewer/viewer.module';
-import {StudyModule} from '../study/study.module';
+import { Feature1Module } from '../Feature1/feature1.module';
+import {Feature2Module} from '../Feature 2/feature2.module';
 import { AppRouterModule } from './approuter.module';
 
 @NgModule({
@@ -12,8 +12,8 @@ import { AppRouterModule } from './approuter.module';
   ],
   imports: [
     BrowserModule,
-    ViewerModule,
-    StudyModule,
+    Feature1Module,
+    Feature2Module,
     AppRouterModule
   ],
   providers: [],

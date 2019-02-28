@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
-import { ViewerComponent } from '../viewer/viewer.component';
+import { Feature1Component } from '../Feature1/feature1.component';
 import { RouterModule } from '@angular/router';
-import { StudyComponent } from '../study/study.component';
+import { Feature2Component } from '../Feature 2/feature2.component';
 
 // To Do: Add User Role specific canActivate functioanlity for every Route
 const appRoutes = [{
-  path: 'viewer',
-  component: ViewerComponent
+  path: 'feature1',
+  component: Feature1Component
 }, {
-  path: 'study',
-  component: StudyComponent
+  path: 'feature2',
+  component: Feature2Component
 }, {
   path: '**',
-  component: ViewerComponent
+  component: Feature1Component
 }];
 
 @NgModule({
