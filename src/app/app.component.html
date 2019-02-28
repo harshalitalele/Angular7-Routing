@@ -1,0 +1,14 @@
+<div>
+  <h2>Main Landing Page</h2>
+  Routes to all other pages should be written over here
+  <div *ngIf="loadViewer">
+    <app-viewer></app-viewer>
+  </div>
+  <div *ngIf="loadStudy">
+    <app-study></app-study>
+  </div>
+  <a routerLink="/viewer">viewer</a>
+  <a routerLink="/study">study</a>
+  <router-outlet></router-outlet>
+</div>
+
